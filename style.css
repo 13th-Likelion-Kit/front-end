@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    background-color: gray;
+}
+
+.card {
+    background-color: white;
+}
+
+.button-group button {
+    background-color: rgb(16, 16, 218);
+}
+
+.button-group button {
+    color : white;
+}
+
+.profile-image  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
