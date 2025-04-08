@@ -1,0 +1,23 @@
+.mbtiText {
+  color: green;
+  background-color: azure;
+}
+.borderbox {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+.listStyle {
+  margin-left: 10px;
+}
+.boldStyle {
+  font-weight: bold;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1px;
+  padding: 10px;
+}
