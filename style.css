@@ -1,0 +1,50 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 50px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10%;
+  width: 300px;
+  display: flex-box;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image img {
+  object-fit: fill;
+  width: 200px;
+  height: 200px;
+  border-radius: 75%;
+  outline: solid blue 3px;
+  justify-content: center;
+}
+
+body {
+  background-color: darkgray;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.button-group {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: rgb(41, 112, 140);
+  color: white;
+  border-radius: 1rem;
+  font-size: 15px;
+  width: 150px;
+}
