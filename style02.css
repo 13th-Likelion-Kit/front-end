@@ -1,0 +1,55 @@
+body {
+    background-color: #d3d3d3;
+}
+
+.card-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+}
+
+
+.card {
+    padding: 2rem;
+    width: 70%;
+    display: flex-box;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 2rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.3);; 
+}
+
+.profile-image img{
+    justify-content: center;
+    object-fit: fill;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    outline: solid 2px blue;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+}
