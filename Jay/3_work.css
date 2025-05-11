@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 상단바 */
+.top-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid #dddddd;
+}
+    
+section a {
+    margin: 0 14px;
+    padding-top: 2%;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-gray {
+    border: none;
+    border-radius: 5px;
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    margin: 0 5px 0;
+    padding: 1px 5px 1px;
+}    
+    
+.login-botton {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* 메인 문구*/
+.main-content {
+    text-align: center;
+    padding-top: 60px;
+    background: linear-gradient(to bottom, #fff6ef 0%, #ffffff 90%);
+}
+    
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+    
+.top-orange {
+    color: #ff7f27;
+    font-weight: 700;
+    font-size: 40px;
+}
+    
+.top-exp {
+    font-size: 16px;
+    color: #878787;
+    margin-top: 12px;
+}
+    
+
+/* 검색창 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 13px 20px;
+    border: 2px solid #ff7f27;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(255, 125, 39, 0.15);
+    gap: 80%;
+}   
+    
+.ai-icon {
+    display: flex;
+    align-items: center;
+    background-color: #fff2e4;
+    border-radius: 30px;
+    padding: 2px 2px;
+    margin-right: 60px;
+}      
+    
+.ai-icon img {
+    height: 28px;
+    object-fit: contain;
+}
+    
+.arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ff7f27;
+}
+    
+/* 카테고리 */
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+    
+.card {
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+    
+.card .images {
+    width: 80px;          
+    height: 80px;
+    border-radius: 23px;
+    margin-top: 30px;
+}
+    
+.card p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+    
+.card .tag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff7f27;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 20px;
+    z-index: 2;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .top-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px;
+    }
+  
+    .top-banner img {
+        margin-bottom: 10px;
+    }
+  
+    section {
+        display: none;
+    }
+  
+    section a {
+        padding-top: 0;
+        font-size: 13px;
+        margin: 0;
+    }
+  
+    .login-botton {
+        align-self: flex-end;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    h1, .top-orange {
+        font-size: 22px;
+        line-height: 1.4;
+        padding-top: 1px;
+    }
+
+    .main-content {
+        padding-top: 40px;
+    }
+  
+    .top-exp {
+        display: block;
+        padding: 0 90px;
+        font-size: 14px;
+    }
+  
+    .search-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 13px 16px;
+        gap: 8px;
+        margin: 30px auto;
+        max-width: 90%;
+        max-width: 370px;
+    }
+  
+    .ai-icon {
+        padding: 2px 6px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+  
+    .ai-icon img {
+        height: 20px;
+    }
+  
+    .arrow {
+        font-size: 18px;
+    }
+  
+    .category {
+        gap: 20px;
+        row-gap: 30px;
+        margin: 40px auto 60px;
+    }
+  
+    .card {
+        width: 70px;
+    }
+  
+    .card .images {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+    }
+  
+    .card p {
+        font-size: 12px;
+    }
+  
+    .card .tag {
+        font-size: 10px;
+        padding: 2px 6px;
+        margin-left: 35px;
+    }
+  }
+  
