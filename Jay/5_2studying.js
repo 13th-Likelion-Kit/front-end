@@ -68,3 +68,79 @@ list1.sort(function (a, b) {
 });
 
 console.log(list1);
+
+
+// 6. 배열 메소드 map을 활용하여 제목, 내용을 순서대로 출력하도록 하시오.
+const list2 = [
+  { title: "제목1", like: 51, content: "내용1" },
+  { title: "제목2", like: 24, content: "내용2" },
+  { title: "제목3", like: 63, content: "내용3" },
+  { title: "제목4", like: 101, content: "내용4" },
+  { title: "제목5", like: 403, content: "내용5" },
+];
+
+list2.map(function(item){
+    console.log(item.title, item.content);
+});
+
+
+// 7. 배열 메소드 filter를 활용하여 like가 100 이상인 것만 출력하도록 하시오.
+const list3 = [
+  { title: "제목1", like: 51, content: "내용1" },
+  { title: "제목2", like: 24, content: "내용2" },
+  { title: "제목3", like: 63, content: "내용3" },
+  { title: "제목4", like: 101, content: "내용4" },
+  { title: "제목5", like: 403, content: "내용5" },
+];
+const result = list3.filter(function(item){
+    return item.like >= 100;
+});
+
+console.log(result); // like가 100 이상인 리스트만 출력 합니다.
+
+
+// 8. 배열 메소드 reduce를 활용하여 like의 총합을 구하시오.                         
+const list4 = [
+  { title: "제목1", like: 51, content: "내용1" },
+  { title: "제목2", like: 24, content: "내용2" },
+  { title: "제목3", like: 63, content: "내용3" },
+  { title: "제목4", like: 101, content: "내용4" },
+  { title: "제목5", like: 403, content: "내용5" },
+];          
+const result2 = list4.reduce(function(acc, cur){
+    return acc + cur.like;
+}, 0); 
+
+console.log(result2); // like의 총합을 출력합니다.
+
+
+// 9. 배열 메소드 some을 활용하여 like가 100 이상인 것이 있는지 확인하시오.
+const list5 = [
+  { title: "제목1", like: 51, content: "내용1" },
+  { title: "제목2", like: 24, content: "내용2" },
+  { title: "제목3", like: 63, content: "내용3" },
+  { title: "제목4", like: 101, content: "내용4" },
+  { title: "제목5", like: 403, content: "내용5" },
+];  
+
+const result3 = list5.some(function(item) {
+    return item.like >= 100;
+});
+
+console.log(result3); // like가 100 이상인 것이 있는지 확인합니다.
+
+
+// 10. 배열 메소드 every를 활용하여 like가 100 이상인 것만 있는지 확인하시오.
+const list6 = [
+  { title: "제목1", like: 51, content: "내용1" },
+  { title: "제목2", like: 24, content: "내용2" },
+  { title: "제목3", like: 63, content: "내용3" },
+  { title: "제목4", like: 101, content: "내용4" },
+  { title: "제목5", like: 403, content: "내용5" },
+]; 
+
+const result4 = list6.every(function(item){
+    return item.like >= 100;
+});
+
+console.log(result4); // like가 100 이상인 것만 있는지 확인합니다. 
