@@ -1,0 +1,11 @@
+html,
+body {
+  background-color: #f5f1e9;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+}

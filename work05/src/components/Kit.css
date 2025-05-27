@@ -1,0 +1,25 @@
+.kit {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.title {
+  background-color: #ff993b;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content > h2 {
+  margin: 0;
+}
